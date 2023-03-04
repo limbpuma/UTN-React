@@ -24,7 +24,7 @@ function Register() {
         .auth()
         .createUserWithEmailAndPassword(formData.email, formData.password);
       await firebase.firestore().collection("users").doc(userCredential.user.uid).set({
-        firstName: formData.firstName,
+        firstName: formData.firstName, 
         lastName: formData.lastName,
         email: formData.email,
       });
