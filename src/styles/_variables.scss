@@ -76,7 +76,17 @@ button a {
   background-color: var(--primary-color);
 }
 
-.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand {
+  padding: var(--navbar-link-padding);
+  margin: var(--navbar-link-margin);
+  width: 20rem;
+  text-align: center;
+  border-radius: var(--navbar-link-border-radius);
+  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
 .navbar-custom .nav-link {
   padding: var(--navbar-link-padding);
   margin: var(--navbar-link-margin);
