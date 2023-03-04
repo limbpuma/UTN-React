@@ -3,17 +3,22 @@ import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
 import firebase from '../Config/firebase';
 import '../styles/General.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
       const userCredential = await firebase.auth().signInWithEmailAndPassword(email.trim(), password.trim());
       console.log(userCredential.user);
+      if (userCredential.user.uid) {
+        navigate('/');
+      }
     } catch (error) {
       setError(error.message);
     }
