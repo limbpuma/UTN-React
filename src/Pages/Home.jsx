@@ -57,9 +57,9 @@ const Home = () => {
                     <Container>
                         <Row className="hero-text align-items-center justify-content-center w-50">
                             <Col lg={6} className="text-left">
-                                <h1>Título del Hero</h1>
+                                <h1>Bienvenido a mi web</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod, mauris vel facilisis imperdiet, odio turpis pharetra augue, eget dapibus nibh nibh in massa. Duis mollis lectus quis faucibus consequat. Nulla quis mi velit.
+                                    Para la concepcion de esta web he usado, react y bootstrap la lista de producto se carga a travez de una api fetch desde mercado libre el login y el registro a travez de Firebase, encantado de recibir feedbacks.
                                 </p>
                             </Col>
                         </Row>
@@ -67,8 +67,8 @@ const Home = () => {
                 </div>
 
 
-                <div className="container">
-  <Row xs={1} md={3} className="g-4 text-center justify-content-center">
+                <div className="container home-featured">
+  <Row xs={1} md={3} className="home-featured-row g-4 text-center justify-content-center">
     <Col className="mb-4">
       <Card>
         <Card.Img variant="top" src={home2} className="w-50 mx-auto" />

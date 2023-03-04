@@ -58,7 +58,7 @@ function ProductList() {
   } else {
     return (
       <div className="container text-center">
-        <h1 className='product-h1'>{titulo}</h1>
+        <h1 className='productlist-h1'>{titulo}</h1>
         <button className="primary-button add-to-cart-button" id="button-none" onClick={handleClick}>Cambiar Titulo</button>
         <Row xs={1} sm={2} md={3} lg={4} xl={5} className="text-center mx-auto align-items-center justify-content-center">
         {productos.map((producto) => (

@@ -51,6 +51,9 @@ Form {
     border-radius: 1.25rem;
     object-fit: cover;
     }
+    .productlist-h1{
+      margin: 2rem auto 2rem auto;
+    }
     #button-none{
       display: none;
     }
@@ -59,7 +62,7 @@ Form {
     }
     .form-label .form-control-custom:focus {
       border-color: var(--primary-color);
-      box-shadow: 0 0 0 0.25rem rgba(30, 250, 1, 0.25);
+      box-shadow: 0 0 0 0.25rem rgba(20, 161, 1, 0.25);
     }
     
     
@@ -67,6 +70,12 @@ Form {
     @media screen and (max-width: 767px) {
       .nav-custom1 {
         display: none;
+      }
+      .home-featured{
+        display: flex;
+      }
+      .home-featured-row{
+        flex-direction: column;
       }
     }
 
