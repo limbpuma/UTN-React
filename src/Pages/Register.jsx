@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import firebase from '../Config/firebase';
+import { useNavigate } from 'react-router-dom';
 
 function RegisterForm() {
   const {
@@ -10,6 +11,7 @@ function RegisterForm() {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -17,16 +19,20 @@ function RegisterForm() {
     try {
       setLoading(true);
       await firebase.auth().createUserWithEmailAndPassword(data.email, data.password);
+      
       await firebase.firestore().collection('users').add({
         firstName: data.firstName,
         lastName: data.lastName,
         email: data.email,
       });
+      
     } catch (error) {
       setError(error.message);
     } finally {
       setLoading(false);
+      navigate('/login'); /*Navegar a /login despues de terminar el registro*/
     }
+    
   };
 
   return (
