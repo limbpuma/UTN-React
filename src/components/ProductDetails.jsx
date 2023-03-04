@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getById, getDescription } from "../Services/ProductServices";
 import { Card, Button, Col } from "react-bootstrap";
 import "../styles/General.css";
@@ -37,7 +37,7 @@ function ProductDetails() {
     <Col className="my-3">
       <Card
         className="product-card-details shadow-lg mx-auto"
-        style={{ width: "40rem" }} 
+        style={{ width: "40rem" }}
       >
         <Card.Img
           variant="top"

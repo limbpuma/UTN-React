@@ -15,12 +15,12 @@ const Header = () => {
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/ProductList">Productos</Nav.Link>
             <Nav.Link as={Link} to="/Login">Login</Nav.Link>
-			<Nav.Link as={Link} to="/Register">Registro</Nav.Link>
+            <Nav.Link as={Link} to="/Register">Registro</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-</div>
-	);
+    </div>
+  );
 }
 
 export default Header;

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import '../styles/General.css';
 
 
-function ProductCard ({ title, price, category, buy, thumbnail, className, details, id }) {
-    
+function ProductCard({ title, price, category, buy, thumbnail, className, details, id }) {
+
     return (
         <Col xs={1} sm={2} md={3} lg={4} xl={5} >
             <Card className="product-card mx-auto shadow-lg">
-                <Card.Img variant="top" src={thumbnail} alt="img-product"/>
+                <Card.Img variant="top" src={thumbnail} alt="img-product" />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
