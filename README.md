@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Welcome to my GitHub repository for my React JS project developed for my course at the Universidad Tecnológica Nacional Regional Buenos Aires UTN. The project, which is entirely in Spanish, is a basic Eshop built using HTML, CSS, Bootstrap, JS, React, and Firebase. The Eshop displays products extracted through a Mercadolibre API. In its first phase, it features an authenticated login and registration through Firebase. In the second phase, it includes pages for adding, editing, and consuming product data from Firebase using CRUD operations. I hope you find this project helpful and informative.
+
+#Bienvenidos a mi repositorio GitHub para mi proyecto React JS desarrollado para mi curso en la Universidad Tecnológica Nacional Regional Buenos Aires UTN. El proyecto, totalmente en español, es una tienda en línea básica construida utilizando HTML, CSS, Bootstrap, JS, React y Firebase. La tienda muestra productos extraídos a través de la API de Mercadolibre. En su primera fase, cuenta con un inicio de sesión y registro autenticados mediante Firebase. En la segunda fase, se incluyen páginas para agregar, editar y consumir datos de productos desde Firebase mediante operaciones CRUD. Espero que este proyecto les resulte útil e informativo.
 
 ## Available Scripts
 
