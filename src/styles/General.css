@@ -38,6 +38,9 @@ Form {
   -webkit-line-clamp: 1; /* numero de palabras a mostrar */
   -webkit-box-orient: vertical;
 }
+.product-card-details{
+  width: 40rem;
+}
 .product-card-details-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -73,15 +76,24 @@ Form {
 }
 
 @media screen and (max-width: 767px) {
-  .home-featured {
-    display: flex;
+  .register-container {
+    width: inherit;
   }
-  .home-featured-row {
-    flex-direction: column;
+  Form {
+    padding: auto;
+  }
+  .product-card-details{
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .register-container {
+    width: fit-content;
+  }
+  .register-container Form.form{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) {
 }

@@ -25,8 +25,8 @@ const Login = () => {
   };
 
   return (
-    <div className="register-container ">
-      <Form className="form text-center" onSubmit={handleLogin}>
+    <div className="register-container mx-auto">
+      <Form className="form text-center " onSubmit={handleLogin}>
         <h1>Login!</h1>
         <p>Me alegra verte de vuelta!</p>
         <Form.Group controlId="formBasicEmail" className='form-label fs-4 fw-bold'>

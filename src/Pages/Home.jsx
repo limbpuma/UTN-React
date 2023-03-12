@@ -68,8 +68,8 @@ const Home = () => {
 
 
         <div className="container home-featured">
-          <Row xs={1} md={3} className="home-featured-row g-4 text-center justify-content-center">
-            <Col className="mb-4">
+          <Row className="home-featured-row text-center justify-content-center gap-5 p-5">
+            <Col xs={1} md={3} className="mb-4">
               <Card>
                 <Card.Img variant="top" src={home2} className="w-50 mx-auto" />
                 <Card.Body>
@@ -80,7 +80,7 @@ const Home = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="mb-4">
+            <Col xs={1} md={3} className="mb-4">
               <Card>
                 <Card.Img variant="top" src={home3} className="w-50 mx-auto" />
                 <Card.Body>
@@ -91,7 +91,7 @@ const Home = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="mb-4">
+            <Col  xs={1} md={3} className="mb-4">
               <Card>
                 <Card.Img variant="top" src={home4} className="w-50 mx-auto" />
                 <Card.Body>

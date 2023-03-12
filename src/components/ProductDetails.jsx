@@ -34,10 +34,9 @@ function ProductDetails() {
     return <div>Cargando ...</div>;
   }
   return (
-    <Col className="my-3">
+    <Col className="my-3 mx-auto">
       <Card
         className="product-card-details shadow-lg mx-auto"
-        style={{ width: "40rem" }}
       >
         <Card.Img
           variant="top"
@@ -50,7 +49,8 @@ function ProductDetails() {
           <Card.Text>
             <h3 className="product-price text-center font-weight-bold">$ {producto.price}</h3>
             <p className="product-card-details-text">{description.plain_text}</p>
-            <p className="text-center">{producto.warranty}</p>
+            <h3 className="text-center font-weight-bold">{producto.warranty}</h3>
+            <p className="text-center">SKU:{producto.id}</p>
           </Card.Text>
           <Button variant="success" className="primary-button" onClick={buy}>
             Comprar

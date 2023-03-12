@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 function Footer() {
   return (
     <div className="margen">
-      <footer className="bg-light py-3 font-weight-bold fs-2 ">
+      <footer className="bg-light py-5 font-weight-bold fs-2 ">
         <Container className="footer-custom d-flex flex-column flex-md-row justify-content-between align-items-center">
           <p className="mb-0">&copy; {new Date().getFullYear()} Mi Sitio Web</p>
           <Nav className="mb-3 mb-md-0">
