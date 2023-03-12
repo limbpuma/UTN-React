@@ -15,20 +15,15 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/ProductList">Productos</Nav.Link>
+            <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/ProductList">Productos</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/producto/alta">Alta</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/producto/alta">Editar</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/producto/alta">Borrar</NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/Login">Login</Nav.Link>
             <Nav.Link as={Link} to="/Register">Registro</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/">Action</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

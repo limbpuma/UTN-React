@@ -74,6 +74,15 @@ Form {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.25rem rgba(20, 161, 1, 0.25);
 }
+.dropdown-menu a {
+  padding: var(--navbar-link-padding);
+  margin: var(--navbar-link-margin);
+  width: var(--navbar-link-width);
+  border-radius: var(--navbar-link-border-radius);
+  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 767px) {
   .register-container {

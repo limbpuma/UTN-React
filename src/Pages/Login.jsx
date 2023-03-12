@@ -53,6 +53,8 @@ const Login = () => {
         <Button variant="success" className="primary-button" size="lg" type="submit">
           Ingresar
         </Button>
+        <h4 className = "mt-3">demo: client@demo.com</h4>
+        <h4 className = "mt-3">password: demo1234</h4>
         <p className="forgot-password">
           <Link to="./Home">Olvidaste tu contraseña?</Link>
         </p>
